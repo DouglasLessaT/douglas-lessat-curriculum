@@ -69,6 +69,7 @@ export default {
 				'resume-gray': '#1E1E1E',
 			},
 			fontFamily: {
+				roboto: ['Roboto', 'sans-serif'],
 				inter: ['Inter', 'sans-serif'],
 				poppins: ['Poppins', 'sans-serif'],
 			},
