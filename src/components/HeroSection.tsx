@@ -29,7 +29,9 @@ const HeroSection = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
                   <span className="text-white">Olá, eu sou</span>
                   <br />
-                  <span className="text-resume-cyan">Douglas Lessat</span>
+                  <span className="text-resume-cyan">
+                    
+                  </span>
                 </h1>
                 <h2 className="text-xl md:text-2xl text-gray-300">Desenvolvedor & Analista de Sistemas</h2>
               </div>
