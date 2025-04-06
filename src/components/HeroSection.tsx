@@ -13,15 +13,40 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="ascii-art-animeted" className="flex justify-between items-center" style={{ paddingTop: '25px' }}>
-      <div>
-        <div
-          id="ascii-art-left"
-          style={{ fontSize: '1px' }}
-          className="text-resume-cyan"
-        ></div>
+    <section className="min-h-screen flex  justify-center bg-black">
+      {/* Camada de Animações ASCII (Inferior) */}
+      <div
+        id="ascii-art-animeted"
+        className="absolute inset-0 flex justify-between items-center z-0"
+        style={{ paddingTop: '25px' }}
+      >
+        {/* Donut Esquerdo */}
+        <div>
+          <div
+            id="ascii-art-left"
+            style={{ fontSize: '1px' }}
+            className="text-resume-cyan"
+          ></div>
+        </div>
+
+        {/* Donut Direito (Invertido Horizontalmente) */}
+        <div>
+          <div
+            id="ascii-art-right"
+            style={{ fontSize: '1px', transform: 'scaleX(-1)' }}
+            className="text-resume-cyan"
+          ></div>
+        </div>
       </div>
-      <div id="about" className="flex flex-col justify-center p-1 animate-fade-in">
+
+      {/* Conteúdo Principal (Camada Superior) */}
+      <div
+        id="about" className=' mx-auto'
+        style={{
+          display: 'grid',
+          placeItems: 'center',
+        }}
+      >
         <div className="container mx-auto px-4 py-10 md:py-20">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-full md:w-1/2 space-y-6 order-2 md:order-1">
@@ -29,24 +54,26 @@ const HeroSection = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
                   <span className="text-white">Olá, eu sou</span>
                   <br />
-                  <span className="text-resume-cyan">
-                    
-                  </span>
+                  <span className="text-resume-cyan">Douglas Lessat</span>
                 </h1>
-                <h2 className="text-xl md:text-2xl text-gray-300">Desenvolvedor & Analista de Sistemas</h2>
+                <h2 className="text-xl md:text-2xl text-gray-300">
+                  Desenvolvedor & Analista de Sistemas
+                </h2>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Atualmente me especializando em Algoritimos, Matemática, Arquitetura e CyberSecurity,
-                sou formado em Análise de Sistemas na Unisales - Centro Universitário
-                Salesiano. Focado no desenvolvimento e de soluções de software e
-                integração de sistemas, com experiência em tecnologias como Java,
-                SQL, JavaScript e TypeScript.
+                Atualmente me especializando em Algoritimos, Matemática,
+                Arquitetura e CyberSecurity, sou formado em Análise de Sistemas
+                na Unisales - Centro Universitário Salesiano. Focado no
+                desenvolvimento e de soluções de software e integração de
+                sistemas, com experiência em tecnologias como Java, SQL,
+                JavaScript e TypeScript.
                 <br />
                 Estou sempre em busca de novos desafios e oportunidades para
-                aprimorar minhas habilidades e contribuir para o sucesso de projetos
-                inovadores. Sendo assim estou aberto a novas oportunidades de trabalho para
-                conseguir me ingrsar em uma faculdede de Engenharia da computação e seguir em
-                estudo na area de computação quântica.
+                aprimorar minhas habilidades e contribuir para o sucesso de
+                projetos inovadores. Sendo assim estou aberto a novas
+                oportunidades de trabalho para conseguir me ingrsar em uma
+                faculdede de Engenharia da computação e seguir em estudo na
+                area de computação quântica.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -55,13 +82,27 @@ const HeroSection = () => {
                     <Download size={18} className="mr-2" /> Download CV
                   </Button>
                 </a>
-                <a href="https://www.linkedin.com/in/douglaslessat/" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" className="border-resume-cyan text-resume-cyan hover:bg-resume-cyan/10">
+                <a
+                  href="https://www.linkedin.com/in/douglaslessat/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    variant="outline"
+                    className="border-resume-cyan text-resume-cyan hover:bg-resume-cyan/10"
+                  >
                     <Linkedin size={18} className="mr-2" /> LinkedIn
                   </Button>
                 </a>
-                <a href="https://github.com/DouglasLessaT" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" className="border-resume-cyan text-resume-cyan hover:bg-resume-cyan/10">
+                <a
+                  href="https://github.com/DouglasLessaT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    variant="outline"
+                    className="border-resume-cyan text-resume-cyan hover:bg-resume-cyan/10"
+                  >
                     <Github size={18} className="mr-2" /> GitHub
                   </Button>
                 </a>
@@ -82,13 +123,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div
-          id="ascii-art-right"
-          style={{ fontSize: '1px', transform: 'scaleX(-1)' }}
-          className="text-resume-cyan"
-        ></div>
       </div>
     </section>
   );
