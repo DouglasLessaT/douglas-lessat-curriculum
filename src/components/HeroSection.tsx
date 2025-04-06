@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { renderDonut } from './AsciiArt';
 import { Button } from "@/components/ui/button";
@@ -14,14 +15,14 @@ const HeroSection = () => {
 
   return (
     <section id="ascii-art-animeted" className="flex justify-between items-center" style={{ paddingTop: '25px' }}>
-      <div>
+      <div className="w-1/4 flex-shrink-0">
         <div
           id="ascii-art-left"
           style={{ fontSize: '1px' }}
           className="text-resume-cyan"
         ></div>
       </div>
-      <div id="about" className="flex flex-col justify-center p-1 animate-fade-in">
+      <div id="about" className="w-2/4 flex flex-col justify-center p-1 animate-fade-in">
         <div className="container mx-auto px-4 py-10 md:py-20">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-full md:w-1/2 space-y-6 order-2 md:order-1">
@@ -81,7 +82,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="w-1/4 flex-shrink-0">
         <div
           id="ascii-art-right"
           style={{ fontSize: '1px', transform: 'scaleX(-1)' }}
