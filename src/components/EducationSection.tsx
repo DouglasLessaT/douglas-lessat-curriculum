@@ -6,28 +6,28 @@ const education = [
   {
     degree: "Análise e Desenvolvimento de Sistemas",
     institution: "Unisales - Centro Universitário Salesiano",
-    period: "2021 - Presente",
-    type: "education" // education or certification
+    period: "2021 - 2025",
+    type: "education" 
   }
 ];
 
 const certifications = [
   {
-    name: "CCNA: Enterprise Networking, Security, and Automation",
+    name: "Junior cybersecurity Analystyst Carrer Part",
     issuer: "Cisco",
-    year: "2023",
+    year: "2025",
     type: "certification"
   },
   {
     name: "Network Defense",
     issuer: "Cisco",
-    year: "2023",
+    year: "2025",
     type: "certification"
   },
   {
-    name: "Implem. Cisco Case Studies",
+    name: "Endpoint Security",
     issuer: "Cisco",
-    year: "2023",
+    year: "2025",
     type: "certification"
   },
   {
@@ -39,13 +39,13 @@ const certifications = [
   {
     name: "Ethical Hacker",
     issuer: "Cisco",
-    year: "2023",
+    year: "2024",
     type: "certification"
   },
   {
-    name: "Entry Cybersecurity",
+    name: "Network Device Initial Configuration",
     issuer: "Cisco", 
-    year: "2022",
+    year: "2025",
     type: "certification"
   }
 ];

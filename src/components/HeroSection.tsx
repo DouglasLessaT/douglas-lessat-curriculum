@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { renderDonut } from './AsciiArt';
+import { renderDonut } from './ui/AsciiArt';
 import { Button } from "@/components/ui/button";
 import { Download, Linkedin, Github } from "lucide-react";
 
