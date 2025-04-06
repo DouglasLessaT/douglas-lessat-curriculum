@@ -43,6 +43,7 @@ const HeroSection = () => {
       <div
         id="about" className=' mx-auto'
         style={{
+          paddingTop: '30px',
           display: 'grid',
           placeItems: 'center',
         }}
