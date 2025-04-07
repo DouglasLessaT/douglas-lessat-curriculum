@@ -1,50 +1,55 @@
+
 import { useEffect } from 'react';
 import { renderDonut } from './ui/AsciiArt';
 import { Button } from "@/components/ui/button";
 import { Download, Linkedin, Github } from "lucide-react";
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const HeroSection = () => {
-  useEffect(() => {
-    // Renderizar o Donut no contêiner esquerdo
-    renderDonut('ascii-art-left');
+  const isMobile = useIsMobile();
 
-    // Renderizar o Donut no contêiner direito
-    renderDonut('ascii-art-right');
-  }, []);
+  useEffect(() => {
+    // Only render ASCII art on desktop screens
+    if (!isMobile) {
+      // Renderizar o Donut no contêiner esquerdo
+      renderDonut('ascii-art-left');
+
+      // Renderizar o Donut no contêiner direito
+      renderDonut('ascii-art-right');
+    }
+  }, [isMobile]);
 
   return (
-    <section className="min-h-screen flex  justify-center bg-black">
-      <div
-        id="ascii-art-animeted"
-        className="absolute inset-0 flex justify-between items-center z-0"
-        style={{ paddingTop: '25px' }}
-      >
-        <div>
-          <div
-            id="ascii-art-left"
-            style={{ fontSize: '3px' }}
-            className="text-resume-cyan"
-          ></div>
-        </div>
+    <section className="min-h-screen flex justify-center bg-black relative">
+      {!isMobile && (
+        <div
+          id="ascii-art-animeted"
+          className="absolute inset-0 flex justify-between items-center z-0 pointer-events-none overflow-hidden"
+          aria-hidden="true"
+        >
+          <div className="hidden md:block">
+            <div
+              id="ascii-art-left"
+              style={{ fontSize: '3px' }}
+              className="text-resume-cyan opacity-60"
+            ></div>
+          </div>
 
-        <div>
-          <div
-            id="ascii-art-right"
-            style={{ fontSize: '3px', transform: 'scaleX(-1)' }}
-            className="text-resume-cyan"
-          ></div>
+          <div className="hidden md:block">
+            <div
+              id="ascii-art-right"
+              style={{ fontSize: '3px', transform: 'scaleX(-1)' }}
+              className="text-resume-cyan opacity-60"
+            ></div>
+          </div>
         </div>
-      </div>
+      )}
 
       <div
-        id="about" className=' mx-auto'
-        style={{
-          paddingTop: '30px',
-          display: 'grid',
-          placeItems: 'center',
-        }}
+        id="about" 
+        className="container relative z-10 mx-auto flex items-center justify-center"
       >
-        <div className="container mx-auto px-4 py-10 md:py-20">
+        <div className="px-4 py-10 md:py-20 w-full">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-full md:w-1/2 space-y-6 order-2 md:order-1">
               <div className="space-y-3">
@@ -108,7 +113,7 @@ const HeroSection = () => {
 
             <div className="w-full md:w-1/2 flex justify-center order-1 md:order-2 mb-8 md:mb-0">
               <div className="relative">
-                <div className="w-100 h-100 md:w-100 md:h-100 rounded-full overflow-hidden border-4 border-resume-cyan p-1">
+                <div className="w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-resume-cyan p-1">
                   <img
                     src="https://media.licdn.com/dms/image/v2/D4D03AQHwy6IpvmrTog/profile-displayphoto-shrink_800_800/B4DZRIh5hzHMAc-/0/1736383634942?e=1749081600&v=beta&t=qmL8X-SU68tWLR50ZH0F9ab4MUj_bob4UUGzVNLxKgY"
                     alt="Douglas Lessat"
