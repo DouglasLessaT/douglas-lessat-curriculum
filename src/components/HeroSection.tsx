@@ -14,32 +14,28 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex  justify-center bg-black">
-      {/* Camada de Animações ASCII (Inferior) */}
       <div
         id="ascii-art-animeted"
         className="absolute inset-0 flex justify-between items-center z-0"
         style={{ paddingTop: '25px' }}
       >
-        {/* Donut Esquerdo */}
         <div>
           <div
             id="ascii-art-left"
-            style={{ fontSize: '1px' }}
+            style={{ fontSize: '3px' }}
             className="text-resume-cyan"
           ></div>
         </div>
 
-        {/* Donut Direito (Invertido Horizontalmente) */}
         <div>
           <div
             id="ascii-art-right"
-            style={{ fontSize: '1px', transform: 'scaleX(-1)' }}
+            style={{ fontSize: '3px', transform: 'scaleX(-1)' }}
             className="text-resume-cyan"
           ></div>
         </div>
       </div>
 
-      {/* Conteúdo Principal (Camada Superior) */}
       <div
         id="about" className=' mx-auto'
         style={{
