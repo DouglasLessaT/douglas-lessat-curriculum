@@ -2,14 +2,15 @@
 import { Card } from "@/components/ui/card";
 
 const HardSkills = [
-  { name: "Java", level: 85 },
-  { name: "SQL", level: 80 },
+  { name: "Java", level: 70 },
+  { name: "SQL", level: 90 },
   { name: "JavaScript", level: 75 },
-  { name: "TypeScript", level: 70 },
+  { name: "TypeScript", level: 60 },
   { name: "C#", level: 65 },
   { name: "JasperSoft", level: 75 },
-  { name: "CRM Customization", level: 80 },
-  { name: "Network Infrastructure", level: 65 },
+  { name: "Linux", level: 80 },
+  { name: "Clound", level: 50 },
+  { name: "Network Infrastructure", level: 70 },
 ];
 
 const SoftSkills = [
