@@ -9,8 +9,8 @@ export function renderDonut(containerId: string): void {
   let A = 0; // Rotation angle A
   let B = 0; // Rotation angle B
   const K2 = 5;
-  const K3 = 240; // Grid size
-  const K4 = 70;  // Scaling factor
+  const K3 = 200; // Grid size
+  const K4 = 60;  // Scaling factor
   const R1 = 1.5;
   const R2 = 2.5;
 
@@ -113,7 +113,7 @@ export function renderDonut(containerId: string): void {
     }, '');
 
     A += 0.04; // Rotation speed A
-    B += 0.02; // Rotation speed B
+    B += 0.04; // Rotation speed B
     requestAnimationFrame(renderFrame);
   }
 
