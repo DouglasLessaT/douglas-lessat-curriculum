@@ -73,7 +73,7 @@ const HeroSection = () => {
                 Estou sempre em busca de novos desafios e oportunidades para
                 aprimorar minhas habilidades e contribuir para o sucesso de
                 projetos inovadores. Sendo assim estou aberto a novas
-                oportunidades de trabalho para conseguir me ingrsar em uma
+                oportunidades de trabalho para conseguir me ingresar em uma
                 faculdede de Engenharia da computação e seguir em estudo na
                 area de computação quântica.
               </p>
