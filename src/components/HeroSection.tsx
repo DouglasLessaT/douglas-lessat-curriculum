@@ -56,7 +56,7 @@ const HeroSection = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
                   <span className="text-white">Olá, eu sou</span>
                   <br />
-                  <span className="text-resume-cyan">Douglas Lessat</span>
+                  <span className="text-resume-cyan">Douglas Lessa</span>
                 </h1>
                 <h2 className="text-xl md:text-2xl text-gray-300">
                   Desenvolvedor & Analista de Sistemas
@@ -113,7 +113,7 @@ const HeroSection = () => {
 
             <div className="w-full md:w-1/2 flex justify-center order-1 md:order-2 mb-8 md:mb-0">
               <div className="relative">
-                <div className="w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-resume-cyan p-1">
+                <div className="w-100 h-100 md:w-82 md:h-82 lg:w-100 lg:h-100 rounded-full overflow-hidden border-4 border-resume-cyan p-1">
                   <img
                     src="https://media.licdn.com/dms/image/v2/D4D03AQHwy6IpvmrTog/profile-displayphoto-shrink_800_800/B4DZRIh5hzHMAc-/0/1736383634942?e=1749081600&v=beta&t=qmL8X-SU68tWLR50ZH0F9ab4MUj_bob4UUGzVNLxKgY"
                     alt="Douglas Lessat"
